@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-poppins">
+    <!-- navbar -->
+    <nav
+      class="bg-white text-black w-full uppercase tracking-[0.22px] md:text-[22px] py-11"
+    >
+      <div class="container mx-auto flex flex-row justify-between items-center">
+        <div>
+          <img
+            src="logo.png"
+            alt="Logo"
+            class="lg:pr-5 sm:w-64 lg:w-60 2xl:w-96 xl:w-96 md:w-[500px] w-[300px]"
+          />
+        </div>
+        <ul
+          class="hidden lg:flex md:flex-row lg:gap-8 justify-end items-center"
+        >
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Working</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li class="">
+            <a
+              class="bg-orange-500 text-white rounded-md py-4 px-4 size-8"
+              href="#"
+              >Sign up</a
+            >
+          </li>
+        </ul>
+        <!-- Mobile Nav -->
+        <div class="lg:hidden">
+          <div class="space-y-1 rotate-180" id="hamburger">
+            <div class="w-6 h-0.5 transition-all bg-black"></div>
+            <div class="w-6 h-0.5 transition-all bg-black"></div>
+            <div class="w-6 h-0.5 transition-all bg-black"></div>
+          </div>
+          <ul
+            class="flex flex-col justify-start gap-5 h-screen absolute top-0 left-0 bg-primary p-10 items-start -translate-x-full transition-all"
+            id="mobile-nav"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Working</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li class="mt-4 -ml-1">
+              <a class="bg-primary text-white rounded-md py-2 px-3" href="#"
+                >Sign up</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav ends -->
+
+    <!-- Hero section -->
+    <section
+      class="flex flex-col container mx-auto bg-[#F4F6F5] rounded-[59px] pt-16 px-10 md:items-center md:px-20 md:pt-[68px] lg:flex-row md:justify-between gap-10 z-30"
+    >
+      <div class="flex flex-col items-start text-black md:pb-[68px] z-10">
+        <h1
+          class="text-5xl font-black leading-[125%] sm:text-5xl lg:text-[90px]  md:text-[60px]  md:leading-[125%]"
+        >
+          <span
+            class="relative after:w-[120%] after:h-full after:bg-white after:block after:absolute after:-z-10 after:top-0 after:-rotate-2 py-4"
+            >EXPLORE</span
+          >
+          <br />
+          YOUR <br/>
+          <span
+            class="relative after:w-[120%] after:h-full after:bg-primary after:block after:absolute after:-z-10 after:top-0 after:-rotate-2"
+            >CHOICE</span
+          >
+          <br />
+          OF CLOTHES.
+        </h1>
+        <p class="md:text-[32px]">
+          Live for Influential and Innovative fashion!
+        </p>
+        <div
+          class="flex flex-col md:flex-row md:items-center justify-evenly gap-9 pt-8"
+        >
+          <div class="w-1/2 h-1/2">
+            <img
+              class=""
+              src="orange1.png"
+              alt="banner image"
+              srcset=""
+              width="900px"
+            />
+          </div>
+          <a
+            class="bg-black text-white rounded-md py-4 px-4 text-center"
+            href="#"
+            >Shop Now</a
+          >
+        </div>
+      </div>
+      <div class="">
+        <img class="w-full" src="hero.png" alt="banner image" />
+      </div>
+    </section>
+    <!-- Hero section ends -->
+
+    <!-- Division btw -->
+    <!-- <section
+      class="flex flex-col justify-center items-center gap-[121px] my-12 bg-primary py-[30px] md:flex-row"
+    ></section> -->
+    <!-- Division ends -->
+
+    <!-- About section -->
+    <section
+      class="flex flex-col container items-start gap-28 mx-auto px-[20px] pt-32"
+    >
+      <div class="relative text-black">
+        <h2
+          class="text-4xl font-black sm:after:content-oval after:absolute after:left-[1%] after:-bottom-5 after:w-10 after:-z-10 md:text-5xl  "
+        >
+          ABOUT
+        </h2>
+        <p>
+          Personalize your shopping Experience by searching the clothes of your
+          choice with recommendation system.
+        </p>
+        <p>Search variety of clothing Items.</p>
+      </div>
+      <div
+        class="flex flex-col lg:flex-row justify-center w-screen items-center gap-20"
+      >
+
+      <!-- grid grid-flow-row grid-row-1 gap-24 md:grid-flow-col md:grid-cols-3 -->
+        <!-- cards -->
+        <div class="flex flex-col w-full justify-center items-center gap-7">
+          <img
+            class="w-[448px] h-[600px] object-cover object-[75%] rounded-[20px]"
+            src="hoodie.webp"
+          />
+          <div class="flex flex-row justify-between items-center">
+            <div class="flex flex-col">
+              <h3 class="text-[32px] font-medium">Hoodies & Sweetshirt</h3>
+            </div>
+          </div>
+        </div>
+        <!-- cards -->
+        <div class="flex flex-col w-full gap-7 justify-center items-center">
+          <img
+            class="w-[448px] h-[600px] object-cover object-[34%] rounded-[20px]"
+            src="tshirt.avif"
+          />
+          <div class="flex flex-row justify-between items-center">
+            <div class="flex flex-col">
+              <h3 class="text-[32px] font-medium">Tops & T-Shirt</h3>
+            </div>
+          </div>
+        </div>
+        <!-- cards -->
+        <div class="flex flex-col w-full gap-7 justify-center items-center">
+          <img
+            class="w-[448px] h-[600px] object-cover object-[47%] rounded-[20px]"
+            src="saree.jpg"
+          />
+          <div class="flex flex-row justify-between items-center">
+            <div class="flex flex-col">
+              <h3 class="text-[32px] font-medium">Sarees & Lehengas</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section ends-->
+
+    <!-- <div
+      class="flex flex-col justify-center items-center gap-[121px] my-12 bg-primary py-[40px] md:flex-row"
+    ></div> -->
+
+    <!-- Working section -->
+    <section
+      class="flex flex-col items-start cursor-pointer md:flex-row md:item-center md:justify-around"
+    > 
+    </section>
+    <section
+      class="container mx-auto flex flex-col my-[190px] gap-28 md:flex-row md:justify-evenly md:items-center"
+    >
+      <div class="flex-1 flex flex-col items-center text-center md:items-start">
+        <h4
+          class="text-4xl md:text-5xl font-black tracking-[3px] leading-[130%] md:leading-[150%] mb-10"
+        >
+          HOW IT WORKS
+        </h4>
+        <ul class="text-2xl font-medium text-[#7C7C7C]">
+          <li>Upload the image that you want to search</li>
+          <li>Hit the search button</li>
+          <li>
+            You will get all the similar items based on the image you have
+            uploaded
+          </li>
+          <li>Choose the most appropriate image as you wish.</li>
+        </ul>
+      </div>
+      <div class="flex-1 rounded-lg">
+        <img src="recommendation.png" alt=" " class="rounded-3xl" />
+      </div>
+    </section>
+    <!-- Working section ends-->
+
+    <!-- Contact us section -->
+    <section class="flex flex-col items-center py-36 bg-primary">
+      <h4
+        class="text-3xl font-black text-white text-center tracking-[1.7px] mb-8 md:leading-[70px] md:text-[55px]"
+      >
+        CONTACT US
+      </h4>
+      <p
+        class="text-xl text-center text-white font-normal md:leading-9 tracking-[1px] md:text-[32px]"
+      >
+        Type your email down below
+      </p>
+      <form class="mt-12">
+        <div class="bg-white rounded-[10px] flex flex-row items-center">
+          <input
+            class="px-4 py-5 rounded-[10px] focus-visible:outline-0 md:py-6 md:px-7"
+            type="email"
+            name="email"
+            placeholder="type your email here"
+          />
+          <button
+            class="py-2 px-4 bg-black text-white uppercase md:text-[33px] md:py-[5px] md:px-[20px] rounded-lg mr-2"
+            type="submit"
+          >
+            send
+          </button>
+        </div>
+      </form>
+    </section>
+    <footer
+      class="bg-black py-[125px] text-white flex flex-col gap-24 px-14 md:items-center md:gap-[150px] md:flex-row md:justify-between"
+    >
+      <div class="flex flex-col items-start gap-8">
+        <div>
+          <h1 class="text-4xl">FASHION</h1>
+        </div>
+        <div>
+          <p class="text-xl text-[#8E8E8E] md:text-2xl font-normal">
+            Complete your style with awesome <br />
+            clothes using the<br />Recommendation system.
+          </p>
+        </div>
+        <ul class="flex flex-row gap-[14px]">
+          <li>
+            <a href="https://www.linkedin.com/in/akansha-kotian-2711b0273/"
+              ><i class="fa-brands fa-linkedin fa-3x" style="color: #ff8c00"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/akansha_kotian/"
+              ><i
+                class="fa-brands fa-instagram fa-3x"
+                style="color: #ff8c00"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-[50px] md:flex-row">
+        <div class="flex flex-col text-[#D9D9D9] gap-8">
+          <h4 class="font-bold">Company</h4>
+          <ul class="flex flex-col gap-8">
+            <li><a href="http://">Support</a></li>
+            <li><a href="http://">Carrers</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col text-[#D9D9D9] gap-8">
+          <h4 class="font-bold">Quick Link</h4>
+          <ul class="flex flex-col gap-8">
+            <li><a href="http://">Share Location</a></li>
+            <li><a href="http://">Orders Tracking</a></li>
+            <li><a href="http://">Size Guide</a></li>
+            <li><a href="http://">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col text-[#D9D9D9] gap-8">
+          <h4 class="font-bold">Legal</h4>
+          <ul class="flex flex-col gap-8">
+            <li><a href="http://">Terms & conditions</a></li>
+            <li><a href="http://">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script async>
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-nav");
+
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("-translate-x-full");
+      });
+    </script>
+  </body>
+</html> -->
