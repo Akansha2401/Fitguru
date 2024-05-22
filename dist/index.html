@@ -28,17 +28,19 @@
       <div class="container mx-auto flex flex-row justify-between items-center">
         <div>
           <img
+            id="logo"
             src="logo.png"
             alt="Logo"
             class="lg:pr-5 sm:w-64 lg:w-60 2xl:w-96 xl:w-96 md:w-[500px] w-[300px]"
           />
         </div>
         <ul
+          id="navItem"
           class="hidden lg:flex md:flex-row lg:gap-8 justify-end items-center"
         >
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="http://127.0.0.1:5000/">Working</a></li>
+          <li><a href="#">Working</a></li>
           <li><a href="#">Contact Us</a></li>
           <li class="">
             <a
@@ -64,7 +66,7 @@
             <li><a href="#">Working</a></li>
             <li><a href="#">Contact Us</a></li>
             <li class="mt-4 -ml-1">
-              <a class="bg-primary text-white rounded-md py-2 px-3" href="#"
+              <a class="bg-black text-white rounded-md py-2 px-3" href="#"
                 >Sign up</a
               >
             </li>
@@ -80,6 +82,7 @@
     >
       <div class="flex flex-col items-start text-black md:pb-[68px] z-10">
         <h1
+          id="mainTitle"
           class="text-5xl font-black leading-[125%] sm:text-5xl lg:text-[90px] md:text-[60px] md:leading-[125%]"
         >
           <span
@@ -95,7 +98,7 @@
           <br />
           OF CLOTHES.
         </h1>
-        <p class="md:text-[32px]">
+        <p id="mainPara" class="md:text-[32px]">
           Live for Influential and Innovative fashion!
         </p>
         <div
@@ -111,6 +114,7 @@
             />
           </div>
           <a
+            id="shopNow"
             class="bg-black text-white rounded-md py-4 px-4 text-center"
             href="#"
             >Shop Now</a
@@ -118,7 +122,7 @@
         </div>
       </div>
       <div class="">
-        <img class="w-full" src="hero.png" alt="banner image" />
+        <img class="w-full" src="hero.png" id="mainImg" alt="banner image" />
       </div>
     </section>
     <!-- Hero section ends -->
@@ -135,15 +139,18 @@
     >
       <div class="relative text-black">
         <h2
-          class="text-4xl font-black sm:after:content-oval after:absolute after:left-[1%] after:-bottom-5 after:w-10 after:-z-10 md:text-5xl"
+          id="aboutSec"
+          class="text-4xl font-black sm:after:content-oval after:absolute after:left-[1%] after:top-[] after:-bottom-5 after:w-10 after:-z-10 md:text-7xl my-3"
         >
           ABOUT
         </h2>
-        <p>
+        <p id="aboutSec" class="text-xl font-medium">
           Personalize your shopping Experience by searching the clothes of your
           choice with recommendation system.
         </p>
-        <p>Search variety of clothing Items.</p>
+        <p id="aboutSec" class="text-xl font-medium">
+          Search variety of clothing Items.
+        </p>
       </div>
       <div class="flex flex-wrap justify-center w-full gap-6">
 <<<<<<< HEAD
@@ -162,44 +169,56 @@
 >>>>>>> 6b1ff7df75079e5b70712c00e5b7e82a0913c8af
         <!-- cards -->
         <div
+          id="aboutCards"
           class="flex flex-col w-[400px] h-[500px] justify-center items-center bg-slate-200 rounded-xl drop-shadow-lg"
         >
           <img
+            id="aboutImgs"
             class="w-[300px] h-[400px] object-cover object-[75%] rounded-[20px]"
             src="hoodie.webp"
           />
           <div class="flex flex-row justify-between items-center">
-            <h3 class="text-[32px] font-medium my-3">Hoodies & Sweetshirt</h3>
+            <h3 id="cardText" class="text-[32px] font-medium my-3">
+              Hoodies & Sweetshirt
+            </h3>
             <!-- <div class="flex flex-col">
 <<<<<<< HEAD
           </div> -->
 =======
-            </div> -->
+           
 >>>>>>> 6b1ff7df75079e5b70712c00e5b7e82a0913c8af
           </div>
         </div>
         <!-- cards -->
         <div
+          id="aboutCards"
           class="flex flex-col w-[400px] h-[500px] justify-center items-center bg-slate-200 rounded-xl drop-shadow-lg"
         >
           <img
+            id="aboutImgs"
             class="w-[300px] h-[400px] object-cover object-[34%] rounded-[20px]"
             src="tshirt.avif"
           />
           <div class="flex flex-row justify-between items-center">
-            <h3 class="text-[32px] font-medium">Tops & T-Shirt</h3>
+            <h3 id="cardText" class="text-[32px] font-medium">
+              Tops & T-Shirt
+            </h3>
           </div>
         </div>
         <!-- cards -->
         <div
+          id="aboutCards"
           class="flex flex-col w-[400px] h-[500px] justify-center items-center bg-slate-200 rounded-xl drop-shadow-lg"
         >
           <img
+            id="aboutImgs"
             class="w-[300px] h-[400px] object-cover object-[47%] rounded-[20px]"
             src="saree.jpg"
           />
           <div class="flex flex-row justify-between items-center">
-            <h3 class="text-[32px] font-medium">Sarees & Lehengas</h3>
+            <h3 id="cardText" class="text-[32px] font-medium">
+              Sarees & Lehengas
+            </h3>
           </div>
         </div>
       </div>
@@ -219,41 +238,46 @@
 >>>>>>> 6b1ff7df75079e5b70712c00e5b7e82a0913c8af
     ></section>
     <section
-      class="container mx-auto flex flex-col my-[190px] gap-28 md:flex-row md:justify-evenly md:items-center"
+      class="container mx-auto flex flex-col my-[190px] gap-28 md:flex-wrap md:justify-evenly md:items-center md:px-20 lg:flex-row px-6"
     >
       <div class="flex-1 flex flex-col items-center text-center md:items-start ">
         <h4
-          class="text-4xl md:text-5xl font-black tracking-[2px] leading-[130%] md:leading-[150%] mb-10 pl-8 pr-8"
+          class="text-4xl md:text-5xl font-black tracking-[3px] leading-[130%] md:leading-[150%] mb-10"
         >
           HOW IT WORKS
         </h4>
-        <ul class="text-2xl text-start font-medium text-[#7C7C7C] pl-8 pr-8">
-          <li>1) Upload the image that you want to search</li>
-          <li>2) Hit the search button</li>
-          <li>3) You will get all the similar items based on the image.</li>
-          <li>4) Choose the most appropriate image as you wish.</li>
+        <ul class="text-2xl font-medium text-[#7C7C7C]">
+          <li>Upload the image that you want to search</li>
+          <li>Hit the search button</li>
+          <li>
+            You will get all the similar items based on the image you have
+            uploaded
+          </li>
+          <li>Choose the most appropriate image as you wish.</li>
         </ul>
       </div>
-      <div class="flex-1 rounded-lg w-[400px] pl-10 pr-10">
+      <div class="flex-1 rounded-lg">
         <img src="recommendation.png" alt=" " class="rounded-3xl" />
       </div>
     </section>
     <!-- Working section ends-->
 
     <!-- Contact us section -->
-    <section class="flex flex-col items-center py-36 bg-primary ">
+    <section class="flex flex-col items-center py-36 bg-primary">
       <h4
-        class="text-3xl font-black text-white text-center tracking-[1.7px] mb-8 md:leading-[70px] md:text-[55px]"
+        class="conItems text-3xl font-black text-white text-center tracking-[1.7px] mb-8 md:leading-[70px] md:text-[55px]"
       >
         CONTACT US
       </h4>
       <p
-        class="text-xl text-center text-white font-normal md:leading-9 tracking-[1px] md:text-[32px]"
+        class="conItems text-xl text-center text-white font-normal md:leading-9 tracking-[1px] md:text-[32px]"
       >
         Type your email down below
       </p>
       <form class="mt-12">
-        <div class="bg-white rounded-[10px] flex flex-row items-center">
+        <div
+          class="conItems bg-white rounded-[10px] flex flex-row items-center"
+        >
           <input
             class="px-4 py-5 rounded-[10px] focus-visible:outline-0 md:py-6 md:px-7"
             type="email"
@@ -325,6 +349,10 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
     <script async>
       const hamburger = document.getElementById("hamburger");
       const mobileMenu = document.getElementById("mobile-nav");
@@ -333,5 +361,7 @@
         mobileMenu.classList.toggle("-translate-x-full");
       });
     </script>
+
+    <script src="script.js"></script>
   </body>
 </html>

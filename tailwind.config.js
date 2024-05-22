@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./dist/*.html"],
+  content: ["./dist/*.html", "./dist/*.js"],
   theme: {
     // screens:{
     //   'ssm':'400px',
     // },
-    
+
     extend: {
       colors: {
         primary: "#FF8C00",
