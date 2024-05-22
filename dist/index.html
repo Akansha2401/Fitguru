@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>FitGuru Recommender</title>
+    <link rel="icon" href="icon.png" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -19,10 +20,10 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-poppins">
+  <body class="font-poppins ">
     <!-- navbar -->
     <nav
-      class="bg-white text-black w-full uppercase tracking-[0.22px] md:text-[22px] py-11"
+      class="bg-white text-black w-full uppercase tracking-[0.22px] md:text-[22px] py-11 pl-8 pr-8"
     >
       <div class="container mx-auto flex flex-row justify-between items-center">
         <div>
@@ -37,10 +38,10 @@
           id="navItem"
           class="hidden lg:flex md:flex-row lg:gap-8 justify-end items-center"
         >
-          <li><a href="#" class="hover:text-orange-500">Home</a></li>
-          <li><a href="#" class="hover:text-orange-500">About</a></li>
-          <li><a href="#" class="hover:text-orange-500">Working</a></li>
-          <li><a href="#" class="hover:text-orange-500">Contact Us</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Working</a></li>
+          <li><a href="#">Contact Us</a></li>
           <li class="">
             <a
               class="bg-orange-500 text-white rounded-md py-4 px-4 size-8"
@@ -77,7 +78,7 @@
 
     <!-- Hero section -->
     <section
-      class="flex flex-col container mx-auto bg-[#F4F6F5] rounded-[59px] pt-16 px-10 md:items-center md:px-20 md:pt-[68px] lg:flex-row md:justify-between gap-10 z-30"
+      class="flex flex-col container mx-auto bg-[#F4F6F5] rounded-[59px] pt-16 px-10 md:items-center md:px-20 md:pt-[68px] lg:flex-row md:justify-between gap-10 z-30 "
     >
       <div class="flex flex-col items-start text-black md:pb-[68px] z-10">
         <h1
@@ -134,7 +135,7 @@
 
     <!-- About section -->
     <section
-      class="flex flex-col container items-start gap-28 mx-auto px-[20px] pt-32"
+      class="flex flex-col container items-start gap-28 mx-auto px-[20px] pt-32 pl-8 pr-8 "
     >
       <div class="relative text-black">
         <h2
@@ -152,6 +153,8 @@
         </p>
       </div>
       <div class="flex flex-wrap justify-center w-full gap-6">
+<<<<<<< HEAD
+=======
         <!--
         flex
         flex-col
@@ -163,6 +166,7 @@
         --
       >
         <!-- grid grid-flow-row grid-row-1 gap-24 md:grid-flow-col md:grid-cols-3 -->
+>>>>>>> 6b1ff7df75079e5b70712c00e5b7e82a0913c8af
         <!-- cards -->
         <div
           id="aboutCards"
@@ -178,7 +182,11 @@
               Hoodies & Sweetshirt
             </h3>
             <!-- <div class="flex flex-col">
+<<<<<<< HEAD
+          </div> -->
+=======
             </div> -->
+>>>>>>> 6b1ff7df75079e5b70712c00e5b7e82a0913c8af
           </div>
         </div>
         <!-- cards -->
@@ -223,46 +231,39 @@
 
     <!-- Working section -->
     <section
+<<<<<<< HEAD
+      class="flex flex-col items-start cursor-pointer md:flex-row md:item-center md:justify-around "
+=======
       class="flex flex-col items-start cursor-pointer md:flex-row md:item-center md:justify-around"
+>>>>>>> 6b1ff7df75079e5b70712c00e5b7e82a0913c8af
     ></section>
     <section
       class="container mx-auto flex flex-col my-[190px] gap-28 md:flex-wrap md:justify-evenly md:items-center md:px-20 lg:flex-row px-6"
     >
-      <div class="flex-1 flex flex-col items-center text-center md:items-start">
+      <div class="flex-1 flex flex-col items-center text-center md:items-start ">
         <h4
-          id="workTexts"
           class="text-4xl md:text-5xl font-black tracking-[3px] leading-[130%] md:leading-[150%] mb-10"
         >
           HOW IT WORKS
         </h4>
-        <ul
-          id="workTexts"
-          class="text-2xl text-start font-medium text-[#7C7C7C]"
-        >
-          <li id="workSubTitle">Upload the image that you want to search</li>
-          <li id="workSubTitle">Hit the search button</li>
-          <li id="workSubTitle">
+        <ul class="text-2xl font-medium text-[#7C7C7C]">
+          <li>Upload the image that you want to search</li>
+          <li>Hit the search button</li>
+          <li>
             You will get all the similar items based on the image you have
             uploaded
           </li>
-          <li id="workSubTitle">
-            Choose the most appropriate image as you wish.
-          </li>
+          <li>Choose the most appropriate image as you wish.</li>
         </ul>
       </div>
-      <div id="workImgDiv" class="rounded-lg w-[400px]">
-        <img
-          id="workImg"
-          src="recommendation.png"
-          alt=" "
-          class="rounded-3xl w-[300px] sm:w-[400px]"
-        />
+      <div class="flex-1 rounded-lg">
+        <img src="recommendation.png" alt=" " class="rounded-3xl" />
       </div>
     </section>
     <!-- Working section ends-->
 
     <!-- Contact us section -->
-    <section id="conSec" class="flex flex-col items-center py-36 bg-primary">
+    <section class="flex flex-col items-center py-36 bg-primary">
       <h4
         class="conItems text-3xl font-black text-white text-center tracking-[1.7px] mb-8 md:leading-[70px] md:text-[55px]"
       >
